@@ -14,12 +14,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
-
-body {
+/* CSS reset for body */
+body, html {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
-

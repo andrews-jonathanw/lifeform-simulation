@@ -1,6 +1,23 @@
+/* Styles for the root */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100vh;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for the title */
+.title {
+  font-size: 1.5em;
   text-align: center;
+}
+
+/* Styles for the canvas */
+.canvas {
+  width: 100%;
+  height: 100%;
+  background-color: black;
 }
