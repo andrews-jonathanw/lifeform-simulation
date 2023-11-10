@@ -34,8 +34,14 @@ export default function Petridish() {
       context.clearRect(0, 0, canvas.width, canvas.height);
 
       lifeformsRef.current.forEach(lifeform => {
-        lifeform.attract(lifeformsRef.current, 'red', 200);
-        lifeform.repel(lifeformsRef.current, 'blue', 200);
+        if (lifeform.color === 'red') {
+          lifeform.attract(lifeformsRef.current, 'red', 100);
+          lifeform.repel(lifeformsRef.current, 'blue', 25);
+        } else if(lifeform.color === 'blue'){
+          lifeform.attract(lifeformsRef.current, 'blue', 50);
+          lifeform.repel(lifeformsRef.current, 'red', 25);
+        }
+
 
         lifeform.separate(lifeformsRef.current);
         lifeform.applyVelocity();

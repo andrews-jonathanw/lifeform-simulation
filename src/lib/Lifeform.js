@@ -6,8 +6,8 @@ class Lifeform {
     this.vy = 0;
     this.color = color;
     this.radius = 5;
-    this.damping = 0.9;
-    this.minVelocity = 0.1;
+    this.damping = 0.7;
+    this.minVelocity = 0.001;
   }
 
   draw(context) {
